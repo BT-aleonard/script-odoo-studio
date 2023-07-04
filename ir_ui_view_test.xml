@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2023 brain-tec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+
+<odoo>
+    <record id="studio_customization.default_form_view_fo_ec41bd92-d477-4d06-a0d2-650fc4067d1f" model="ir.ui.view"
+            context="{'studio': True}">
+        <field name="active" eval="True"/>
+        <field name="arch" type="xml">
+            <form>
+                <header/>
+                <sheet string="Epic responsible">
+                    <widget name="web_ribbon" text="Archived" bg_color="bg-danger"
+                            attrs="{'invisible': [('x_active', '=', True)]}"/>
+                    <field name="x_active" invisible="1"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="x_name" required="1" placeholder="Name..."/>
+                        </h1>
+                    </div>
+                    <group name="studio_group_ca12f7">
+                        <group name="studio_group_ca12f7_left">
+                            <field name="x_studio_user_id" widget="many2one_avatar_user"/>
+                        </group>
+                        <group name="studio_group_ca12f7_right"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter" name="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                    <field name="activity_ids"/>
+                </div>
+            </form>
+        </field>
+        <field name="field_parent" eval="False"/>
+        <field name="groups_id" eval="[(6, 0, [])]"/>
+        <field name="inherit_id" eval="False"/>
+        <field name="key" eval="False"/>
+        <field name="mode">primary</field>
+        <field name="model">x_epic_responsible</field>
+        <field name="name">Default form view for x_epic_responsible</field>
+        <field name="priority">16</field>
+        <field name="type">form</field>
+    </record>
+</odoo>

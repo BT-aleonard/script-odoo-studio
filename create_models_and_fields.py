@@ -83,7 +83,8 @@ def add_fields_to_models(xml_file, created_files):
             if related:
                 # if related.startswith("x_"):
                 related = related.replace("x_", '')
-                f.write(f"related='{related}'")
+                # todo check if this works
+                f.write(f"related='{clean_field_name(related)}'")
             elif field_type == 'Many2one' and relation:
                 f.write(f"'{clean_model_name(relation)}'")
                 # if relation_field:
