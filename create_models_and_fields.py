@@ -69,7 +69,7 @@ def add_fields_to_models(xml_file, created_files):
         else:
             model_name = model_name.replace("x_", '')
             file_name = f"{model_name}.py"
-        #if model_name in created_files:
+        # if model_name in created_files:
         #   python_file_name = f"{model_name}.py"
         if file_name not in new_files and file_name not in created_files:
             # This is to create the file for the first time
@@ -77,7 +77,7 @@ def add_fields_to_models(xml_file, created_files):
                 f.write(get_file_header(model_name, new_model=False))
             print(f"The Python file '{file_name}' has been created successfully!")
             created_files.append(file_name)
-
+        # TODO: check when a field is x_active (skip the field definition)
         with open(file_name, 'a') as f:
             f.write(f"   {field_name} = fields.{field_type}(")
             if related:
@@ -130,6 +130,9 @@ def clean_model_name(model_name):
     model_name = re.sub(r'^x_', '', model_name)
     model_name = model_name.replace('_', '.')
     return model_name
+
+# def create_views(ir_ui_file):
+#
 
 # Check if both XML file paths are provided as arguments
 if len(sys.argv) < 3:
