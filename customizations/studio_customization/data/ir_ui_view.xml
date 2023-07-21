@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+<!--  <record id="studio_customization.default_form_view_fo_a54a5f51-3555-44ae-a7ef-d66b2fbd6497" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <form>-->
+<!--        <header/>-->
+<!--        <sheet string="Task ressources">-->
+<!--          <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('x_active', '=', True)]}"/>-->
+<!--          <field name="x_active" invisible="1"/>-->
+<!--          <div class="oe_title">-->
+<!--            <h1>-->
+<!--              <field name="x_name" required="1" placeholder="Name..."/>-->
+<!--            </h1>-->
+<!--          </div>-->
+<!--          <group name="studio_group_9f2100">-->
+<!--            <group name="studio_group_9f2100_left"/>-->
+<!--            <group name="studio_group_9f2100_right"/>-->
+<!--          </group>-->
+<!--        </sheet>-->
+<!--      </form>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Default form view for x_task_ressources</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">form</field>-->
+<!--  </record>-->
+
+<!--  DONE-->
+<!--  <record id="studio_customization.default_form_view_fo_ec41bd92-d477-4d06-a0d2-650fc4067d1f" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <form>-->
+<!--        <header/>-->
+<!--        <sheet string="Epic responsible">-->
+<!--          <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('x_active', '=', True)]}"/>-->
+<!--          <field name="x_active" invisible="1"/>-->
+<!--          <div class="oe_title">-->
+<!--            <h1>-->
+<!--              <field name="x_name" required="1" placeholder="Name..."/>-->
+<!--            </h1>-->
+<!--          </div>-->
+<!--          <group name="studio_group_ca12f7">-->
+<!--            <group name="studio_group_ca12f7_left">-->
+<!--              <field name="x_studio_user_id" widget="many2one_avatar_user"/>-->
+<!--            </group>-->
+<!--            <group name="studio_group_ca12f7_right"/>-->
+<!--          </group>-->
+<!--        </sheet>-->
+<!--        <div class="oe_chatter" name="oe_chatter">-->
+<!--          <field name="message_follower_ids"/>-->
+<!--          <field name="message_ids"/>-->
+<!--          <field name="activity_ids"/>-->
+<!--        </div>-->
+<!--      </form>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_epic_responsible</field>-->
+<!--    <field name="name">Default form view for x_epic_responsible</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">form</field>-->
+<!--  </record>-->
+
+<!--  <record id="studio_customization.default_gantt_view_f_f849b1fe-bccd-46ba-b0e2-53b56d63be27" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <gantt date_start="x_studio_start" date_stop="x_studio_end" string="Default gantt view for x_task_ressources"/>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Default gantt view for x_task_ressources</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">gantt</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.default_list_view_fo_7c81f771-1c09-44e7-8657-388dbc856dd9" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <tree>-->
+<!--        <field name="x_studio_sequence" widget="handle"/>-->
+<!--        <field name="x_name"/>-->
+<!--      </tree>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Default list view for x_task_ressources</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">tree</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.default_list_view_fo_ba8c7ed8-a9b0-45a8-bf29-7ba461def80c" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <tree>-->
+<!--        <field name="x_studio_sequence" widget="handle"/>-->
+<!--        <field name="x_name"/>-->
+<!--        <field name="x_studio_user_id" widget="many2one_avatar_user"/>-->
+<!--      </tree>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_epic_responsible</field>-->
+<!--    <field name="name">Default list view for x_epic_responsible</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">tree</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.default_search_view__af22c04d-8abf-4228-973f-76a754c15bef" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <search>-->
+<!--        <field name="x_name"/>-->
+<!--        <field name="x_studio_user_id"/>-->
+<!--        <filter string="My Epic responsible" name="my_x_epic_responsible" domain="[['x_studio_user_id', '=', uid]]"/>-->
+<!--        <separator/>-->
+<!--        <filter string="Archived" name="archived_x_epic_responsible" domain="[['x_active', '=', False]]"/>-->
+<!--        <separator/>-->
+<!--        <filter name="groupby_x_user" string="Responsible" context="{'group_by': 'x_studio_user_id'}" domain="[]"/>-->
+<!--      </search>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_epic_responsible</field>-->
+<!--    <field name="name">Default search view for x_epic_responsible</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">search</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.default_search_view__f02234ee-944a-4ba4-bddd-2936f0d5a622" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <search>-->
+<!--        <field name="x_name"/>-->
+<!--        <separator/>-->
+<!--        <filter string="Archived" name="archived_x_task_ressources" domain="[['x_active', '=', False]]"/>-->
+<!--        <separator/>-->
+<!--      </search>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" eval="False"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">primary</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Default search view for x_task_ressources</field>-->
+<!--    <field name="priority">16</field>-->
+<!--    <field name="type">search</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.odoo_studio_default__76aeea3d-43fb-4918-bf05-31a7d38ccf52" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <data>-->
+<!--        <xpath expr="//gantt[1]" position="attributes">-->
+<!--          <attribute name="collapse_first_level">true</attribute>-->
+<!--          <attribute name="default_scale">month</attribute>-->
+<!--          <attribute name="display_unavailability">true</attribute>-->
+<!--          <attribute name="precision">{"month":"day:full","week":"day:half","day":"hour:full"}</attribute>-->
+<!--          <attribute name="string">Task ressources</attribute>-->
+<!--          <attribute name="total_row">true</attribute>-->
+<!--        </xpath>-->
+<!--      </data>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" ref="studio_customization.default_gantt_view_f_f849b1fe-bccd-46ba-b0e2-53b56d63be27"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">extension</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Odoo Studio: Default gantt view for x_task_ressources customization</field>-->
+<!--    <field name="priority">99</field>-->
+<!--    <field name="type">gantt</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.odoo_studio_default__7ed975a8-2398-4913-8f4d-0fd290d0b10e" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <data>-->
+<!--        <xpath expr="//tree[1]" position="attributes">-->
+<!--          <attribute name="editable">bottom</attribute>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//field[@name='x_studio_sequence']" position="after">-->
+<!--          <field optional="show" name="x_studio_role" string="Role"/>-->
+<!--          <field optional="show" name="x_studio_task_id" attrs="{}" invisible="1"/>-->
+<!--          <field optional="show" name="x_studio_resource_id"/>-->
+<!--          <field optional="show" name="x_studio_estimated_time" widget="float_time" string="Estimated Time"/>-->
+<!--          <field optional="hide" name="x_studio_start" string="start" attrs="{}"/>-->
+<!--          <field optional="hide" name="x_studio_end" string="end"/>-->
+<!--        </xpath>-->
+<!--      </data>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" ref="studio_customization.default_list_view_fo_7c81f771-1c09-44e7-8657-388dbc856dd9"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">extension</field>-->
+<!--    <field name="model">x_task_ressources</field>-->
+<!--    <field name="name">Odoo Studio: Default list view for x_task_ressources customization</field>-->
+<!--    <field name="priority">99</field>-->
+<!--    <field name="type">tree</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.odoo_studio_default__ccd11b2b-585a-4304-90a0-9a3922da5142" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <data>-->
+<!--        <xpath expr="//tree[1]" position="attributes">-->
+<!--          <attribute name="editable">bottom</attribute>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//field[@name='x_studio_sequence']" position="after">-->
+<!--          <field optional="show" name="x_studio_epic_id"/>-->
+<!--          <field optional="show" name="x_studio_project_id"/>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//field[@name='x_studio_user_id']" position="after">-->
+<!--          <xpath expr="//field[@name='x_name']" position="move"/>-->
+<!--        </xpath>-->
+<!--      </data>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" ref="studio_customization.default_list_view_fo_ba8c7ed8-a9b0-45a8-bf29-7ba461def80c"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">extension</field>-->
+<!--    <field name="model">x_epic_responsible</field>-->
+<!--    <field name="name">Odoo Studio: Default list view for x_epic_responsible customization</field>-->
+<!--    <field name="priority">99</field>-->
+<!--    <field name="type">tree</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.odoo_studio_planning_41a0a6be-934e-4ae2-b748-e3664c573932" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <data>-->
+<!--        <xpath expr="//form[1]/sheet[1]/group[1]/group[@name='slot_info_right']/div[2]" position="after">-->
+<!--          <field name="x_studio_many2one_field_tEMdz"/>-->
+<!--        </xpath>-->
+<!--      </data>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" ref="planning.planning_view_form"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">extension</field>-->
+<!--    <field name="model">planning.slot</field>-->
+<!--    <field name="name">Odoo Studio: planning.slot.form customization</field>-->
+<!--    <field name="priority">160</field>-->
+<!--    <field name="type">form</field>-->
+<!--  </record>-->
+<!--  <record id="studio_customization.odoo_studio_project__2aaff7b8-07c9-4c7f-83d1-7dea5c458934" model="ir.ui.view" context="{'studio': True}">-->
+<!--    <field name="active" eval="True"/>-->
+<!--    <field name="arch" type="xml">-->
+<!--      <data>-->
+<!--        <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='description_page']/group[1]/group[not(@name)][2]/field[@name='id']" position="after">-->
+<!--          <field name="x_studio_parent_task_description" string="Parent Task description" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;=&quot;,False]]}"/>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//field[@name='description']" position="after">-->
+<!--          <field name="x_studio_parent_task_acceptance_criteria" string="Parent task Acceptance criteria" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;=&quot;,False]]}"/>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//field[@name='acceptance_criteria']" position="after">-->
+<!--          <field name="x_studio_parent_task_test_cases" string="Parent task Test Cases" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;=&quot;,False]]}"/>-->
+<!--        </xpath>-->
+<!--        <xpath expr="//form[1]/sheet[1]/notebook[1]/page[1]" position="after">-->
+<!--          <page string="Global Definition" name="studio_page_rradU">-->
+<!--            <group name="studio_group_rradU">-->
+<!--              <group name="studio_group_rradU_left">-->
+<!--                <field name="x_studio_globale_required" string="need Global" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;!=&quot;,False]]}"/>-->
+<!--                <field name="x_studio_requirements" string="Requirements" attrs="{&quot;required&quot;: [[&quot;x_studio_globale_required&quot;,&quot;=&quot;,True]], &quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;!=&quot;,False]]}"/>-->
+<!--                <field name="x_studio_has_global" string="has global" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;=&quot;,False]]}"/>-->
+<!--                <field name="x_studio_related_field_d5Oie" attrs="{&quot;invisible&quot;: [[&quot;parent_id&quot;,&quot;=&quot;,False]]}"/>-->
+<!--              </group>-->
+<!--              <group name="studio_group_rradU_right"/>-->
+<!--            </group>-->
+<!--          </page>-->
+<!--          <page string="Time Estimation" name="studio_page_7bCgK">-->
+<!--            <group name="studio_group_7bCgK">-->
+<!--              <field name="x_studio_ressources_1" string="Ressources"/>-->
+<!--            </group>-->
+<!--          </page>-->
+<!--        </xpath>-->
+<!--      </data>-->
+<!--    </field>-->
+<!--    <field name="field_parent" eval="False"/>-->
+<!--    <field name="groups_id" eval="[(6, 0, [])]"/>-->
+<!--    <field name="inherit_id" ref="project.view_task_form2"/>-->
+<!--    <field name="key" eval="False"/>-->
+<!--    <field name="mode">extension</field>-->
+<!--    <field name="model">project.task</field>-->
+<!--    <field name="name">Odoo Studio: project.task.form customization</field>-->
+<!--    <field name="priority">1000</field>-->
+<!--    <field name="type">form</field>-->
+<!--  </record>-->
+  <record id="studio_customization.odoo_studio_project__c0b29c48-339e-43b5-a6f7-f0bb44721b44" model="ir.ui.view" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="arch" type="xml">
+      <data>
+        <xpath expr="//field[@name='available_for_all_projects']" position="after">
+          <field name="epic_responsible_ids">
+            <tree editable="bottom">
+              <field name="x_studio_sequence" widget="handle"/>
+              <field optional="show" name="x_studio_epic_id" attrs="{}" invisible="1" required="1"/>
+              <field optional="show" name="x_studio_project_id"/>
+              <field name="x_studio_user_id" widget="many2one_avatar_user"/>
+            </tree>
+          </field>
+        </xpath>
+      </data>
+    </field>
+    <field name="field_parent" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="inherit_id" ref="project_backlog_base.project_scrum_epic_form_view"/>
+    <field name="key" eval="False"/>
+    <field name="mode">extension</field>
+    <field name="model">project.scrum.epic</field>
+    <field name="name">Odoo Studio: project.scrum.epic.form.view customization</field>
+    <field name="priority">99</field>
+    <field name="type">form</field>
+  </record>
+</odoo>

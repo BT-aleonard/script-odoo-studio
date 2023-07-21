@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.active_epic_responsi_73933389-1240-4c24-9a47-d493d7c64b1e" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.active_epic_responsi_ca22bf52-2d9c-4981-8b99-c00cec807d3b"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.active_task_ressourc_646a29d7-ec1c-4b10-9ab8-ec4e5dd295fe" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.active_task_ressourc_28cf3e94-32e1-4b6d-8dd0-2ac16448043f"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.sequence_epic_respon_f1512ea1-3798-492b-a9d8-9d1fe0202930" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.sequence_epic_respon_5e727ca3-6954-4239-ba76-531f1bc9aa86"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.sequence_task_ressou_3ac80ab5-21a2-45c9-b44d-4917d5813414" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.sequence_task_ressou_015266ab-ae9f-41f0-94f4-7f8eebf91d33"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+</odoo>

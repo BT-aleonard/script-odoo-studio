@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.epic_responsible_gro_7441bb36-fefa-436f-81fe-e28cd36aba2a" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="studio_customization.epic_responsible_8b1cf41b-72e0-4382-85fd-85a13a688b71"/>
+    <field name="name">Epic responsible group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.epic_responsible_gro_b80c0412-4310-463f-9246-2c0686ff8d1d" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="studio_customization.epic_responsible_8b1cf41b-72e0-4382-85fd-85a13a688b71"/>
+    <field name="name">Epic responsible group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.task_ressources_grou_2d1465c9-cd2b-48e1-a8c2-72caa0ae0ee8" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_system"/>
+    <field name="model_id" ref="studio_customization.task_ressources_5b1029db-3f25-442b-b2f2-682d133f607d"/>
+    <field name="name">Task ressources group_system</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+  <record id="studio_customization.task_ressources_grou_74f155e5-c347-471b-bae0-cd21f8b17e75" model="ir.model.access" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="group_id" ref="base.group_user"/>
+    <field name="model_id" ref="studio_customization.task_ressources_5b1029db-3f25-442b-b2f2-682d133f607d"/>
+    <field name="name">Task ressources group_user</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+</odoo>
