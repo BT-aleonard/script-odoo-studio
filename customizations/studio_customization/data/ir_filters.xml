@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.abteilung_atg_gl_kop_369eaae6-c8a9-48b8-8248-340333f6717b" model="ir.filters" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="context">{'group_by': ['stage_id']}</field>
+    <field name="domain">[["x_studio_abteilung", "=", "ATG-GL"]]</field>
+    <field name="is_default" eval="False"/>
+    <field name="model_id">project.project</field>
+    <field name="name">Abteilung: ATG-GL</field>
+    <field name="sort">[]</field>
+  </record>
+  <record id="studio_customization.abteilung_atg_it_kop_88edcb09-4652-430c-b3ff-9dde843281f8" model="ir.filters" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="context">{'group_by': ['stage_id']}</field>
+    <field name="domain">[["x_studio_abteilung", "=", "ATG-IT"]]</field>
+    <field name="is_default" eval="False"/>
+    <field name="model_id">project.project</field>
+    <field name="name">Abteilung: ATG-IT</field>
+    <field name="sort">[]</field>
+  </record>
+</odoo>

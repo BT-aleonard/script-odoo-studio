@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.mitarbeiter_zuweisun_3436ef7d-4f67-404c-ba53-6f6064abf026" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.mitarbeiter_zuweisun_89ac719e-ec49-4b5e-b374-822b751c969d"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+  <record id="studio_customization.mitarbeiter_zuweisun_471fdcd1-46f7-41f4-aae6-72bcf9f845a8" model="base.automation" context="{'studio': True}">
+    <field name="action_server_id" ref="studio_customization.mitarbeiter_zuweisun_029dfc2e-6d4f-4ce9-8392-5664f2e6d898"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_create_or_write</field>
+  </record>
+</odoo>
