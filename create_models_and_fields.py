@@ -35,7 +35,7 @@ def create_models_from_ir_model(xml_file):
 
 
 def get_file_header(model_name, model_description=False, new_model=True):
-    file_header = f"from odoo import models, fields\n\n\n"
+    file_header = f"from odoo import api, fields, models\n\n\n"
     model_name = model_name.replace(".", "_")
     class_name = get_class_name(model_name)
     model_name = clean_model_name(model_name)
@@ -60,6 +60,11 @@ def get_boolean_field_attribute_value(record, path):
                                  record_element.text.lower() == 'true')
     return field_attribute_value
 
+def get_eval_value(record, path):
+    record_element = record.find(path)
+    eval_element = record_element.get('eval')
+    return eval_element
+
 def get_boolean_or_value_field_attribute_value(record, path):
     record_element = record.find(path)
     eval_element = record_element.get('eval')
@@ -78,19 +83,36 @@ def add_fields_to_models(xml_file):
     if not os.path.exists(current_path):
         os.makedirs(current_path)
 
+    computed_methods = []
+
     for record in root.findall("record"):
-        # TODO compute
+        field_name = clean_field_name(record.findtext('field[@name="name"]'))
+        model_name = record.findtext('field[@name="model"]')
+
+        if not model_name.startswith("x_"):
+            file_name = os.path.join(current_path + f"{model_name.replace('.', '_')}.py")
+        else:
+            model_name = model_name.replace("x_", '')
+            file_name = os.path.join(current_path + f"{model_name}.py")
+
+        compute_logic = record.findtext('field[@name="compute"]')
         # copied - It is automatically computed according to field type and if it's related or computed.
         #          Should be aligned
-        # TODO depends
-        # TODO domain
+        compute_dependencies = record.findtext('field[@name="depends"]')
+        if compute_logic and compute_dependencies:
+            computed_methods.append(
+                {
+                    'logic': compute_logic,
+                    'dependencies': compute_dependencies,
+                    'method_name': f'_compute_{field_name}',
+                    'file_name': file_name,
+                })
+        domain = record.findtext('field[@name="domain"]')
         field_label = record.findtext('field[@name="field_description"]')
-        # TODO groups
-        # TODO help
-        # TODO index
-        model_name = record.findtext('field[@name="model"]')
+        field_groups = get_eval_value(record, 'field[@name="groups"]')
+        field_help = get_boolean_or_value_field_attribute_value(record, 'field[@name="help"]')
+        field_index = get_boolean_field_attribute_value(record, 'field[@name="index"]')
         # model_id is the xml id of the model above. Not needed in this context
-        field_name = clean_field_name(record.findtext('field[@name="name"]'))
         ondelete = get_boolean_or_value_field_attribute_value(record, 'field[@name="on_delete"]')
         field_readonly = get_boolean_field_attribute_value(record, 'field[@name="readonly"]')
         related = record.findtext('field[@name="related"]')
@@ -99,8 +121,8 @@ def add_fields_to_models(xml_file):
         relation_table = record.findtext('field[@name="relation_table"]')
         field_required = get_boolean_field_attribute_value(record, 'field[@name="required"]')
         # TODO selectable is by default True, just take it if being False
-        # TODO selection
-        # TODO size
+        field_selection = get_boolean_or_value_field_attribute_value(record, 'field[@name="selection"]')
+        field_size = get_boolean_or_value_field_attribute_value(record, 'field[@name="size"]')
         # state - not needed. It will be always 'manual' for custom fields. Otherwise would be 'base'
         # TODO store is by default True, just take it if being False
         field_tracking = get_boolean_field_attribute_value(record, 'field[@name="tracking"]')
@@ -120,30 +142,40 @@ def add_fields_to_models(xml_file):
             field_params.append(f"'{related_model}'")
             if relation_table:
                 field_params.append(f"'{clean_field_name(relation_table)}'")
-        if ondelete and ondelete != 'set null':
-            field_params.append(f"ondelete='{ondelete}'")
+        elif field_type == 'Selection' and field_selection:
+            field_params.append(f"{field_selection}")
         if related:
             field_params.append(f"related='{clean_field_name(related)}'")
-
         if field_label:
             if field_label.lower().replace(" ", "_") != field_name:
-                field_params.append(f"string=\"{field_label}\"")
+                if len(field_params) == 0:
+                    field_params.append(f"\"{field_label}\"")
+                else:
+                    field_params.append(f"string=\"{field_label}\"")
+        if field_help:
+            field_params.append(f"help=\"{field_help}\"")
+        if domain and domain != '[]':
+            field_params.append(f"domain=\"{domain}\"")
+        if ondelete and ondelete != 'set null':
+            field_params.append(f"ondelete='{ondelete}'")
         if field_required:
             field_params.append(f"required={str(field_required)}")
         if field_readonly and not related:
             field_params.append(f"readonly={str(field_readonly)}")
+        if field_index:
+            field_params.append(f"index={str(field_index)}")
+        if field_size:
+            field_params.append(f"size={field_size}")
         if field_translate:
             field_params.append(f"translate={str(field_translate)}")
         if field_tracking:
             field_params.append(f"tracking={str(field_tracking)}")
+        if field_groups:
+            if field_groups != '[(6, 0, [])]':
+                groups = ",".join(re.findall(r"ref\('([^']*)'\)", field_groups))
+                field_params.append(f"groups=\"{groups}\"")
 
         field_string += ', '.join(field_params) + f")\n"
-
-        if not model_name.startswith("x_"):
-            file_name = os.path.join(current_path + f"{model_name.replace('.', '_')}.py")
-        else:
-            model_name = model_name.replace("x_", '')
-            file_name = os.path.join(current_path + f"{model_name}.py")
 
         if not os.path.exists(file_name):
             with open(file_name, 'a') as f:
@@ -157,6 +189,15 @@ def add_fields_to_models(xml_file):
             if field_string not in content:
                 with open(file_name, 'a') as f:
                     f.write(field_string)
+
+    for computed_method in computed_methods:
+        with open(computed_method['file_name'], 'a') as f:
+            logic = computed_method['logic'].replace('\n', '\n        ')
+            dependencies = computed_method['dependencies'].replace(',', '\', \'')
+            computed_method_string = f"\n    @api.depends('{dependencies}')\n" \
+                                     f"    def {computed_method['method_name']}(self):\n" \
+                                     f"        {logic}"
+            f.write(computed_method_string)
 
     print("Field definitions added to all Python files successfully!")
 
