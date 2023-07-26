@@ -16,10 +16,14 @@ def create_models_from_ir_model(xml_file):
     root = tree.getroot()
     created_files = []
 
+    current_path = os.getcwd() + '/studio_customization_python/'
+    if not os.path.exists(current_path):
+        os.makedirs(current_path)
+
     for record in root.findall("record"):
         model_name = record.findtext('field[@name="model"]')
         model_name = model_name.replace('x_', '')
-        python_file_name = f"{model_name}.py"
+        python_file_name = os.path.join(current_path + f"{model_name}.py")
         model_description = record.findtext('field[@name="name"]')
 
         with open(python_file_name, 'w') as f:
@@ -69,6 +73,10 @@ def get_boolean_or_value_field_attribute_value(record, path):
 def add_fields_to_models(xml_file):
     tree = etree.parse(xml_file)
     root = tree.getroot()
+
+    current_path = os.getcwd() + '/studio_customization_python/'
+    if not os.path.exists(current_path):
+        os.makedirs(current_path)
 
     for record in root.findall("record"):
         # TODO compute
@@ -132,10 +140,10 @@ def add_fields_to_models(xml_file):
         field_string += ', '.join(field_params) + f")\n"
 
         if not model_name.startswith("x_"):
-            file_name = f"{model_name.replace('.', '_')}.py"
+            file_name = os.path.join(current_path + f"{model_name.replace('.', '_')}.py")
         else:
             model_name = model_name.replace("x_", '')
-            file_name = f"{model_name}.py"
+            file_name = os.path.join(current_path + f"{model_name}.py")
 
         if not os.path.exists(file_name):
             with open(file_name, 'a') as f:

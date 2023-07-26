@@ -517,40 +517,4 @@
     <field name="sequence">6</field>
     <field name="web_icon" eval="False"/>
   </record>
-  <record id="studio_customization.settings_custom_conf_7222797b-63c0-48a0-b8d7-0ad2770319ce" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" eval="False"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">Custom Configuration</field>
-    <field name="parent_id" ref="base.menu_administration"/>
-    <field name="sequence">1000</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="studio_customization.settings_custom_conf_8f149d2f-b130-438f-978e-839383fa4eef" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="studio_customization.raul_stages_256f9436-08f1-4b3d-821f-cd9d0130809b"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">RAUL Stages</field>
-    <field name="parent_id" ref="studio_customization.settings_custom_conf_7222797b-63c0-48a0-b8d7-0ad2770319ce"/>
-    <field name="sequence">10</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="studio_customization.settings_custom_conf_c2aa75ed-2943-4501-a245-fbb13b28df1f" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="studio_customization.raul_tags_f9cd1bc2-63df-4557-8148-6299b6677db9"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">RAUL Tags</field>
-    <field name="parent_id" ref="studio_customization.settings_custom_conf_7222797b-63c0-48a0-b8d7-0ad2770319ce"/>
-    <field name="sequence">10</field>
-    <field name="web_icon" eval="False"/>
-  </record>
-  <record id="studio_customization.settings_raul_23a138eb-6ea0-4ce7-af8d-3d955e72f3a0" model="ir.ui.menu" context="{'studio': True}">
-    <field name="action" ref="studio_customization.raul_8c984cb3-2c15-419c-8b45-2a782800ebb6"/>
-    <field name="active" eval="True"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="name">RAUL</field>
-    <field name="parent_id" ref="base.menu_administration"/>
-    <field name="sequence">111</field>
-    <field name="web_icon" eval="False"/>
-  </record>
 </odoo>

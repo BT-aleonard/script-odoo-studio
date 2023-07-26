@@ -1,10 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-  <record id="studio_customization.active_raul_b331600b-1e62-4cf2-b915-e97c08c3d659" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.active_raul_a9b61468-27de-42f1-92b7-7b8fd893e0fc"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">true</field>
-  </record>
   <record id="studio_customization.aktiv_asset_kategori_de2d43b2-cfcd-4f85-8447-a214fc136a71" model="ir.default" context="{'studio': True}">
     <field name="field_id" ref="studio_customization.aktiv_asset_kategori_0bcaec82-97c7-4831-bcc8-9eff6feb8991"/>
     <field name="condition" eval="False"/>
@@ -45,145 +40,10 @@
     <field name="condition" eval="False"/>
     <field name="json_value">true</field>
   </record>
-  <record id="studio_customization.company_raul_15b4054d-6004-484d-9976-c0f74e0743b0" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">4</field>
-  </record>
-  <record id="studio_customization.company_raul_175e0f52-2072-400a-9d05-953a253df1e2" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">9</field>
-  </record>
-  <record id="studio_customization.company_raul_178b656c-1805-420b-8364-29020f192824" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">14</field>
-  </record>
-  <record id="studio_customization.company_raul_4d65957a-6999-4fe5-96b6-db2fda65bd3e" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">6</field>
-  </record>
-  <record id="studio_customization.company_raul_4dba1455-b845-4721-a542-2b6b2f3dd4f6" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">2</field>
-  </record>
-  <record id="studio_customization.company_raul_6bfa6fe4-00b9-44e4-8686-d782461cf2b5" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
-  </record>
-  <record id="studio_customization.company_raul_9b498bc4-3060-4469-99b6-400b85560ebf" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">13</field>
-  </record>
-  <record id="studio_customization.company_raul_9cf88cfb-b2b7-4c61-a7b3-8c336456a09d" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.company_raul_9fa12753-8d83-44e1-852e-d07dfbd25c0e" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">7</field>
-  </record>
-  <record id="studio_customization.company_raul_ade8b1cc-79b8-4590-b622-ca0539a92f3a" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">10</field>
-  </record>
-  <record id="studio_customization.company_raul_b72e2c7e-7adb-4940-9210-4e716b3e39e3" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">8</field>
-  </record>
-  <record id="studio_customization.company_raul_b7392eae-a50d-4333-8fa9-e2d0d8b6b937" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">3</field>
-  </record>
-  <record id="studio_customization.company_raul_f01331f4-b928-49f3-a170-b87d73dc528c" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.company_raul_77e05ce1-d551-4017-857a-e248b85c3621"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">11</field>
-  </record>
-  <record id="studio_customization.currency_raul_0588586d-d451-41df-b33b-b8fde63fa6a5" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">142</field>
-  </record>
-  <record id="studio_customization.currency_raul_066450e2-a4b4-4d51-9550-6431d8f72aa5" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
-  </record>
-  <record id="studio_customization.currency_raul_07abb3ea-fb5e-42c2-9532-b17581e3a33e" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.currency_raul_15e8053a-5a62-4c57-88e6-3c4203782f04" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
-  </record>
-  <record id="studio_customization.currency_raul_35ef4266-301d-4d8d-bfb0-6de8550bb16d" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
-  </record>
-  <record id="studio_customization.currency_raul_39508cbb-e3d4-4daf-86df-895adff03adf" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">17</field>
-  </record>
-  <record id="studio_customization.currency_raul_5277933c-75fb-4e77-848d-b585b1b5ffc0" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.currency_raul_6a54a64d-e1a8-4933-9fe5-8189e9c1bfba" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.currency_raul_be003431-8c56-4f7c-9d8d-42ff434c58a0" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">4</field>
-  </record>
-  <record id="studio_customization.currency_raul_c068f1de-1d54-486e-b5a0-48cd5701f08c" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.currency_raul_eb40d91a-2396-4e4a-a198-4e7b79ae3eb5" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
-  <record id="studio_customization.currency_raul_f08e43c6-c6ad-4f33-a54c-be8a9b3b2748" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
-  </record>
-  <record id="studio_customization.currency_raul_fc64e5b8-c451-45ae-9160-41bae873fbb6" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.currency_raul_d1ccff3b-288f-4529-a7d2-1233790d5dd7"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">5</field>
-  </record>
   <record id="studio_customization.new_ganzzahl_employe_75adde23-a8ae-49c1-b26c-61decb78acb9" model="ir.default" context="{'studio': True}">
     <field name="field_id" ref="studio_customization.new_ganzzahl_employe_7db499f7-e5bd-4aa8-ba03-5decaa8fe6ab"/>
     <field name="condition" eval="False"/>
     <field name="json_value">""</field>
-  </record>
-  <record id="studio_customization.new_integer_my_wst_c14876e2-8cff-481f-84a9-77a4be913402" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.new_integer_my_wst_b8f099f7-7b49-4a99-8117-07f432cfc503"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">"0"</field>
   </record>
   <record id="studio_customization.prioritat_projekt_c45c6450-973f-462f-83ca-225f268dcdb3" model="ir.default" context="{'studio': True}">
     <field name="field_id" ref="studio_customization.new_prioritat_projec_00ab8011-904f-4232-9437-eb0c3e43945b"/>
@@ -234,16 +94,6 @@
     <field name="field_id" ref="studio_customization.reihenfolge_vm_hosts_75b5d6c2-59cb-405a-883d-bd27d53a0884"/>
     <field name="condition" eval="False"/>
     <field name="json_value">10</field>
-  </record>
-  <record id="studio_customization.sequence_raul_637ca0aa-dad5-43ff-8f1c-ffd1d76ea898" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.sequence_raul_50f253a0-455f-4239-ab3c-5b62691f047a"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">10</field>
-  </record>
-  <record id="studio_customization.stage_raul_cf3bf91d-9b5b-40be-bc79-894457070251" model="ir.default" context="{'studio': True}">
-    <field name="field_id" ref="studio_customization.stage_raul_ea726faf-a646-4318-bdec-0ee31cd91c4c"/>
-    <field name="condition" eval="False"/>
-    <field name="json_value">1</field>
   </record>
   <record id="studio_customization.unternehmen_assets_0041d5b1-60d1-4205-99a6-b23caac39b1b" model="ir.default" context="{'studio': True}">
     <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>

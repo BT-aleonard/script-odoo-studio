@@ -19,7 +19,6 @@ It contains the apps created with Studio and the customizations of existing apps
         'hr_fleet',
         'hr_gamification',
         'hr_skills',
-        'industry_fsm_report',
         'mail',
         'project',
         'survey',

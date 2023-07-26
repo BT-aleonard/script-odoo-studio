@@ -1,50 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <odoo>
-  <record id="industry_fsm_report.report_custom_x_project_task_worksheet_template_2" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <t t-name="x_project_task_worksheet_template_2">
-        <div>
-          <div>
-            <div>
-              <div class="row mb-3" style="page-break-inside: avoid">
-                <div t-att-class="('col-5' if report_type == 'pdf' else 'col-lg-5 col-12') + ' font-weight-bold'">My Integer field</div>
-                <div string="My Integer field" t-att-class="'col-7' if report_type == 'pdf' else 'col-lg-7 col-12'" t-field="worksheet.x_studio_my_integer_field"/>
-              </div>
-              <div class="row mb-3" style="page-break-inside: avoid">
-                <div t-att-class="('col-5' if report_type == 'pdf' else 'col-lg-5 col-12') + ' font-weight-bold'">Comments</div>
-                <div t-att-class="'col-7' if report_type == 'pdf' else 'col-lg-7 col-12'" t-field="worksheet.x_comments"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </t>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key">gen_key.5bad27</field>
-    <field name="mode">primary</field>
-    <field name="model" eval="False"/>
-    <field name="name">x_project_task_worksheet_template_2</field>
-    <field name="priority">16</field>
-    <field name="type">qweb</field>
-  </record>
-  <record id="studio_customization.default_calendar_vie_eb128a72-68b2-4248-9a53-10fca7b5447a" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <calendar date_start="x_studio_date" create_name_field="x_name"/>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default calendar view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">calendar</field>
-  </record>
   <record id="studio_customization.default_form_view_fo_1d258d6b-a472-4386-b3f6-66e1ff47f29c" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -114,70 +69,6 @@
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
-  <record id="studio_customization.default_form_view_fo_33ef660c-8dc4-448f-a3e4-e55b426c65f9" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <header>
-          <field name="x_studio_stage_id" widget="statusbar" options="{'clickable': '1'}"/>
-        </header>
-        <sheet string="RAUL">
-          <field name="x_studio_kanban_state" widget="state_selection"/>
-          <widget name="web_ribbon" text="Archived" bg_color="bg-danger" attrs="{'invisible': [('x_active', '=', True)]}"/>
-          <field name="x_active" invisible="1"/>
-          <field class="oe_avatar" widget="image" name="x_studio_image"/>
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1" placeholder="Name..."/>
-            </h1>
-          </div>
-          <group name="studio_group_d3a1d7">
-            <group name="studio_group_d3a1d7_left">
-              <field name="x_studio_partner_id"/>
-              <field name="x_studio_partner_phone" widget="phone" options="{'enable_sms': True}"/>
-              <field name="x_studio_partner_email" widget="email"/>
-              <field name="x_studio_date"/>
-              <label string="Dates" for="x_studio_date_start"/>
-              <div class="o_row">
-                <field name="x_studio_date_start" widget="daterange" options="{&quot;related_end_date&quot;: &quot;x_studio_date_stop&quot;}"/>
-                <span> to </span>
-                <field name="x_studio_date_stop" widget="daterange" options="{&quot;related_start_date&quot;: &quot;x_studio_date_start&quot;}"/>
-              </div>
-            </group>
-            <group name="studio_group_d3a1d7_right">
-              <field name="x_studio_user_id" widget="many2one_avatar_user"/>
-              <field name="x_studio_currency_id" invisible="1"/>
-              <field name="x_studio_value" widget="monetary" options="{'currency_field': 'x_studio_currency_id'}"/>
-              <field name="x_studio_tag_ids" widget="many2many_tags" options="{'color_field': 'x_color'}"/>
-              <field name="x_studio_company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
-            </group>
-          </group>
-          <group>
-            <field name="x_studio_notes" placeholder="Type down your notes here..." nolabel="1" colspan="2"/>
-          </group>
-          <notebook>
-            <page string="Details" name="lines">
-              <field name="x_raul_line_ids_b862d"/>
-            </page>
-          </notebook>
-        </sheet>
-        <div class="oe_chatter" name="oe_chatter">
-          <field name="message_follower_ids"/>
-          <field name="message_ids"/>
-          <field name="activity_ids"/>
-        </div>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default form view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
   <record id="studio_customization.default_form_view_fo_3fb9911f-96bc-41eb-87e6-c9f9f0f653fd" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -205,62 +96,6 @@
     <field name="mode">primary</field>
     <field name="model">x_asset_unterkategorie</field>
     <field name="name">Default form view for x_asset_unterkategorie</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="studio_customization.default_form_view_fo_494a9496-0042-42c2-ae27-a7b62ccc3c0b" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <header/>
-        <sheet string="RAUL Tags">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1" placeholder="Name..."/>
-            </h1>
-          </div>
-          <group name="studio_group_25035a">
-            <group name="studio_group_25035a_left"/>
-            <group name="studio_group_25035a_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_tag</field>
-    <field name="name">Default form view for x_raul_tag</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
-  <record id="studio_customization.default_form_view_fo_50dc5a2a-84d2-470c-a47d-d6eace4dcb79" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <header/>
-        <sheet string="RAUL Stages">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1" placeholder="Name..."/>
-            </h1>
-          </div>
-          <group name="studio_group_4aac37">
-            <group name="studio_group_4aac37_left"/>
-            <group name="studio_group_4aac37_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_stage</field>
-    <field name="name">Default form view for x_raul_stage</field>
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
@@ -383,34 +218,6 @@
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
-  <record id="studio_customization.default_form_view_fo_b077433c-5696-4a28-85aa-2ffa1a60fbc6" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <form>
-        <header/>
-        <sheet string="raul_line">
-          <div class="oe_title">
-            <h1>
-              <field name="x_name" required="1" placeholder="Name..."/>
-            </h1>
-          </div>
-          <group name="studio_group_02b7be">
-            <group name="studio_group_02b7be_left"/>
-            <group name="studio_group_02b7be_right"/>
-          </group>
-        </sheet>
-      </form>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_line_9d1c4</field>
-    <field name="name">Default form view for x_raul_line_9d1c4</field>
-    <field name="priority">16</field>
-    <field name="type">form</field>
-  </record>
   <record id="studio_customization.default_form_view_fo_c8de2d55-f07d-4620-bf9d-46980c724aec" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -502,39 +309,6 @@
     <field name="priority">16</field>
     <field name="type">form</field>
   </record>
-  <record id="studio_customization.default_gantt_view_f_fa24d52d-de85-4abe-88d0-57e4e20bf4a5" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <gantt date_start="x_studio_date_start" date_stop="x_studio_date_stop"/>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default gantt view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">gantt</field>
-  </record>
-  <record id="studio_customization.default_graph_view_f_5b66fa25-150d-40a8-9692-62e1f14b46a7" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <graph sample="1">
-        <field name="x_studio_value" type="measure"/>
-        <field name="create_date" type="row"/>
-      </graph>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default graph view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">graph</field>
-  </record>
   <record id="studio_customization.default_graph_view_f_f20e8e0c-11a0-486f-be9d-a9e1f96ca883" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -553,108 +327,6 @@
     <field name="priority">16</field>
     <field name="type">graph</field>
   </record>
-  <record id="studio_customization.default_kanban_view__b433138c-a578-461a-882c-71a82dc78e4d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <kanban default_group_by="x_studio_stage_id" default_order="x_studio_priority desc, x_studio_sequence asc, id desc">
-        <field name="x_color"/>
-        <field name="x_studio_user_id" widget="many2one_avatar_user"/>
-        <field name="x_studio_currency_id"/>
-        <progressbar field="x_studio_kanban_state" colors="{&quot;normal&quot;: &quot;200&quot;, &quot;done&quot;: &quot;success&quot;, &quot;blocked&quot;: &quot;danger&quot;}" sum_field="x_studio_value"/>
-        <templates>
-          <t t-name="kanban-box">
-            <div t-attf-class="#{!selection_mode ? kanban_color(record.x_color.raw_value) : ''} oe_kanban_global_click">
-              <field class="o_kanban_image" name="x_studio_image" widget="image" options="{&quot;zoom&quot;: true, &quot;background&quot;: true, &quot;preventClicks&quot;: false}"/>
-              <div class="o_kanban_record_details">
-                <div class="o_kanban_record_top" name="studio_auto_kanban_top">
-                  <div class="o_kanban_record_headings" name="studio_auto_kanban_headings">
-                    <field name="x_studio_priority" widget="boolean_favorite" nolabel="1"/>
-                    <strong class="o_kanban_record_title" name="studio_auto_kanban_title">
-                      <field name="x_name"/>
-                    </strong>
-                  </div>
-                  <div class="o_dropdown_kanban dropdown">
-                    <a role="button" class="dropdown-toggle o-no-caret btn" data-bs-toggle="dropdown" data-display="static" href="#" aria-label="Dropdown Menu" title="Dropdown Menu">
-                      <span class="fa fa-ellipsis-v"/>
-                    </a>
-                    <div class="dropdown-menu" role="menu">
-                      <a t-if="widget.editable" role="menuitem" type="edit" class="dropdown-item">Edit</a>
-                      <a t-if="widget.deletable" role="menuitem" type="delete" class="dropdown-item">Delete</a>
-                      <ul class="oe_kanban_colorpicker" data-field="x_color"/>
-                    </div>
-                  </div>
-                </div>
-                <div class="o_kanban_record_body" name="studio_auto_kanban_body">
-                  <field name="x_studio_tag_ids" options="{'color_field': 'x_color'}"/>
-                </div>
-                <div class="o_kanban_record_bottom" name="studio_auto_kanban_bottom">
-                  <div class="oe_kanban_bottom_left" name="studio_auto_kanban_bottom_left">
-                    <field name="x_studio_value" widget="monetary" options="{'currency_field': 'x_studio_currency_id'}"/>
-                  </div>
-                  <div class="oe_kanban_bottom_right" name="studio_auto_kanban_bottom_right">
-                    <field name="x_studio_kanban_state" widget="state_selection"/>
-                    <t t-set="unassigned" t-translation="on">Unassigned</t>
-                    <img t-att-src="kanban_image('res.users', 'avatar_128', record.x_studio_user_id.raw_value)" t-att-title="record.x_studio_user_id.value || unassigned" t-att-alt="record.x_studio_user_id.value" class="oe_kanban_avatar o_image_24_cover float-right"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </t>
-        </templates>
-      </kanban>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default kanban view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">kanban</field>
-  </record>
-  <record id="studio_customization.default_list_view_fo_02d44795-76c4-4c66-bb5e-796f1bf87d5d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="x_name"/>
-        <field name="x_studio_partner_id"/>
-        <field name="x_studio_user_id" widget="many2one_avatar_user"/>
-        <field name="x_studio_company_id" groups="base.group_multi_company"/>
-        <field name="x_studio_currency_id" invisible="1"/>
-        <field name="x_studio_value" widget="monetary" options="{'currency_field': 'x_studio_currency_id'}" sum="Total"/>
-        <field name="x_studio_tag_ids" widget="many2many_tags" options="{'color_field': 'x_color'}"/>
-        <field name="x_color" widget="color_picker"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default list view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="studio_customization.default_list_view_fo_0ab40caf-3c97-4425-af72-a8b275861cab" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree editable="bottom">
-        <field name="x_name"/>
-        <field name="x_color" widget="color_picker"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_tag</field>
-    <field name="name">Default list view for x_raul_tag</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
   <record id="studio_customization.default_list_view_fo_16e396c0-1e1e-408d-84d7-af0657753d0a" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -670,24 +342,6 @@
     <field name="mode">primary</field>
     <field name="model">x_raume</field>
     <field name="name">Default list view for x_raume</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
-  <record id="studio_customization.default_list_view_fo_3b24e624-4bc1-4b21-bdf0-c7eb5f8a622d" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree editable="bottom">
-        <field name="x_studio_sequence" widget="handle"/>
-        <field name="x_name"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_stage</field>
-    <field name="name">Default list view for x_raul_stage</field>
     <field name="priority">16</field>
     <field name="type">tree</field>
   </record>
@@ -803,24 +457,6 @@
     <field name="priority">16</field>
     <field name="type">tree</field>
   </record>
-  <record id="studio_customization.default_list_view_fo_8f558100-d711-4a19-b735-334aaf75ad56" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <tree editable="bottom">
-        <field name="x_studio_sequence" widget="handle"/>
-        <field name="x_name"/>
-      </tree>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_line_9d1c4</field>
-    <field name="name">Default list view for x_raul_line_9d1c4</field>
-    <field name="priority">16</field>
-    <field name="type">tree</field>
-  </record>
   <record id="studio_customization.default_list_view_fo_c26b73ea-23dd-43f2-9d5f-fe31f3a3b584" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -839,23 +475,6 @@
     <field name="priority">16</field>
     <field name="type">tree</field>
   </record>
-  <record id="studio_customization.default_map_view_for_8aba340f-315c-43c2-87f1-6948e478d2b0" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <map res_partner="x_studio_partner_id">
-        <field name="x_studio_partner_id" string="Partner"/>
-      </map>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default map view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">map</field>
-  </record>
   <record id="studio_customization.default_pivot_view_f_7fd070e7-8b5c-4de6-8e8c-f66390d5a81d" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -872,59 +491,6 @@
     <field name="name">Default pivot view for x_assets</field>
     <field name="priority">16</field>
     <field name="type">pivot</field>
-  </record>
-  <record id="studio_customization.default_pivot_view_f_ab17e340-6ceb-4523-995e-9cf7ce0bc5f8" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <pivot sample="1">
-        <field name="x_studio_value" type="measure"/>
-        <field name="x_studio_stage_id" type="col"/>
-        <field name="x_studio_date" type="row"/>
-      </pivot>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default pivot view for x_raul</field>
-    <field name="priority">16</field>
-    <field name="type">pivot</field>
-  </record>
-  <record id="studio_customization.default_search_view__07414405-872b-4a12-af0a-c49e1f265bfd" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <search>
-        <field name="x_name"/>
-      </search>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_tag</field>
-    <field name="name">Default search view for x_raul_tag</field>
-    <field name="priority">16</field>
-    <field name="type">search</field>
-  </record>
-  <record id="studio_customization.default_search_view__1119f1b6-dd9c-4716-9c00-c897a87d35be" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <search>
-        <field name="x_name"/>
-      </search>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_line_9d1c4</field>
-    <field name="name">Default search view for x_raul_line_9d1c4</field>
-    <field name="priority">16</field>
-    <field name="type">search</field>
   </record>
   <record id="studio_customization.default_search_view__33ce42b9-c8e0-4b3a-a855-f1ca57a8e4dc" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
@@ -960,54 +526,6 @@
     <field name="mode">primary</field>
     <field name="model">x_asset_kategorie</field>
     <field name="name">Default search view for x_asset_kategorie</field>
-    <field name="priority">16</field>
-    <field name="type">search</field>
-  </record>
-  <record id="studio_customization.default_search_view__6214e4ad-4c0c-4141-9daa-48d4ecf86e6c" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <search>
-        <field name="x_name"/>
-      </search>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul_stage</field>
-    <field name="name">Default search view for x_raul_stage</field>
-    <field name="priority">16</field>
-    <field name="type">search</field>
-  </record>
-  <record id="studio_customization.default_search_view__682daa52-1dcd-43f7-a453-5009542461b3" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <search>
-        <field name="x_name"/>
-        <field name="x_studio_partner_id" operator="child_of"/>
-        <field name="x_studio_user_id"/>
-        <field name="x_studio_tag_ids"/>
-        <filter string="My RAUL" name="my_x_raul" domain="[['x_studio_user_id', '=', uid]]"/>
-        <separator/>
-        <filter date="x_studio_date" name="studio_filter_date" string="Date"/>
-        <filter date="x_studio_date_start" name="studio_filter_date_start" string="Start Date"/>
-        <filter date="x_studio_date_stop" name="studio_filter_date_stop" string="End Date"/>
-        <separator/>
-        <filter string="Archived" name="archived_x_raul" domain="[['x_active', '=', False]]"/>
-        <separator/>
-        <filter name="groupby_x_partner" string="Partner" context="{'group_by': 'x_studio_partner_id'}" domain="[]"/>
-        <filter name="groupby_x_user" string="Responsible" context="{'group_by': 'x_studio_user_id'}" domain="[]"/>
-        <filter name="x_studio_stage_id" string="Stage" context="{'group_by': 'x_studio_stage_id'}" domain="[]"/>
-      </search>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" eval="False"/>
-    <field name="key" eval="False"/>
-    <field name="mode">primary</field>
-    <field name="model">x_raul</field>
-    <field name="name">Default search view for x_raul</field>
     <field name="priority">16</field>
     <field name="type">search</field>
   </record>
@@ -1378,27 +896,6 @@
     <field name="priority">99</field>
     <field name="type">tree</field>
   </record>
-  <record id="studio_customization.odoo_studio_default__d1da620c-8b14-4370-acf4-693377f38aa5" model="ir.ui.view" context="{'studio': True}">
-    <field name="active" eval="True"/>
-    <field name="arch" type="xml">
-      <data>
-        <xpath expr="//field[@name='x_studio_partner_email']" position="after">
-          <field name="x_studio_raul_contact" string="Raul Contact" help="My help" widget="one2many" domain="[[&quot;active&quot;,&quot;=&quot;,True]]"/>
-          <field name="x_studio_related_field_raul_num_tasks"/>
-          <field name="x_studio_many2one_field_raul" help="My help" widget="many2one_avatar" domain="[[&quot;email&quot;,&quot;=&quot;,&quot;pepe@gmail.com&quot;]]" groups="sign.group_sign_manager"/>
-        </xpath>
-      </data>
-    </field>
-    <field name="field_parent" eval="False"/>
-    <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="studio_customization.default_form_view_fo_33ef660c-8dc4-448f-a3e4-e55b426c65f9"/>
-    <field name="key" eval="False"/>
-    <field name="mode">extension</field>
-    <field name="model">x_raul</field>
-    <field name="name">Odoo Studio: Default form view for x_raul customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
-  </record>
   <record id="studio_customization.odoo_studio_document_360906e3-0075-4d99-baa2-7dde35b0a012" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
@@ -1723,11 +1220,17 @@
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
+        <xpath expr="//field[@name='partner_id']" position="after">
+          <field name="x_studio_many2one_field_j2RB3" attrs="{&quot;invisible&quot;: [[&quot;x_studio_eintritt&quot;,&quot;!=&quot;,True]]}"/>
+        </xpath>
         <xpath expr="//form[1]/sheet[1]/group[1]/group[1]/field[@name='company_id']" position="after">
           <field name="x_studio_many2one_field_JqQAl"/>
         </xpath>
         <xpath expr="//field[@name='allocated_hours']" position="after">
           <field widget="priority" name="x_studio_projekt_prioritaet" string="Priorität"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='settings']/group[1]/group[1]/field[@name='analytic_account_id']" position="after">
+          <field name="x_studio_eintritt" string="Eintritt"/>
         </xpath>
       </data>
     </field>
@@ -1788,6 +1291,9 @@
       <data>
         <xpath expr="//form[1]/sheet[1]/group[1]/group[2]/field[@name='partner_id']" position="after">
           <field name="x_studio_abteilung" string="Abteilung"/>
+        </xpath>
+        <xpath expr="//form[1]/sheet[1]/group[1]/group[2]/field[@name='legend_done']" position="after">
+          <field name="x_studio_related_field_FmJHC"/>
         </xpath>
       </data>
     </field>
@@ -1997,24 +1503,24 @@
     <field name="priority">99</field>
     <field name="type">kanban</field>
   </record>
-  <record id="studio_customization.odoo_studio_template_e5d394a3-5812-46f5-ac96-d2086e2a81aa" model="ir.ui.view" context="{'studio': True}">
+  <record id="studio_customization.odoo_studio_tags_cus_ee9f5a0f-1750-4e97-b53a-f5486c8b0ec8" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
     <field name="arch" type="xml">
       <data>
-        <xpath expr="//field[@name='x_comments']" position="before">
-          <field name="x_studio_my_integer_field" string="My Integer field"/>
+        <xpath expr="//tree[1]/field[@name='name']" position="after">
+          <field name="id" optional="show"/>
         </xpath>
       </data>
     </field>
     <field name="field_parent" eval="False"/>
     <field name="groups_id" eval="[(6, 0, [])]"/>
-    <field name="inherit_id" ref="industry_fsm_report.x_project_task_worksheet_template_2_ir_ui_view_1"/>
+    <field name="inherit_id" ref="project.project_tags_tree_view"/>
     <field name="key" eval="False"/>
     <field name="mode">extension</field>
-    <field name="model">x_project_task_worksheet_template_2</field>
-    <field name="name">Odoo Studio: template_view_My_WST customization</field>
-    <field name="priority">99</field>
-    <field name="type">form</field>
+    <field name="model">project.tags</field>
+    <field name="name">Odoo Studio: Tags customization</field>
+    <field name="priority">160</field>
+    <field name="type">tree</field>
   </record>
   <record id="studio_customization.studio_main_report_07c29922-0702-496a-b916-b161a59b91cf" model="ir.ui.view" context="{'studio': True}">
     <field name="active" eval="True"/>
