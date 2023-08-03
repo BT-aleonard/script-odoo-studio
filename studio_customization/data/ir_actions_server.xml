@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.mitarbeiter_zuweisun_029dfc2e-6d4f-4ce9-8392-5664f2e6d898" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - float_compare: Odoo function to compare floats based on specific precisions
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+#  - Command: x2Many commands namespace
+# To return an action, assign: action = {...}
+
+#records.message_post(body="Neuer Standort: " + records.x_studio_standort.x_name)
+
+
+for r in records:
+  if r.x_studio_standort:
+    r.message_post(body="Neuer Standort: " + r.x_studio_standort.x_name)
+  else:
+    r.message_post(body="Kein Standort definiert - Standard Lagerort") 
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="studio_customization.assets_97938dc1-cbf4-4811-b4ad-69810ea5f0ae"/>
+    <field name="name">Standort Zuweisung aktualisieren</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="studio_customization.mitarbeiter_zuweisun_89ac719e-ec49-4b5e-b374-822b751c969d" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - float_compare: Odoo function to compare floats based on specific precisions
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+#  - Command: x2Many commands namespace
+# To return an action, assign: action = {...}
+
+#records.message_post(body="Zugewiesen an: " + records.x_studio_asset_mitarbeiter.name)
+
+for r in records:
+  if r.x_studio_asset_mitarbeiter:
+    r.message_post(body="Zugewiesen an: " + r.x_studio_asset_mitarbeiter.name)
+  else:
+    r.message_post(body="Nicht zugewiesen") 
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="studio_customization.assets_97938dc1-cbf4-4811-b4ad-69810ea5f0ae"/>
+    <field name="name">Mitarbeiter Zuweisung aktualisieren</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="studio_customization.mitarbeiter_zuweisun_ba10ad94-7a31-4a44-9781-2f4edee6b73e" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - float_compare: Odoo function to compare floats based on specific precisions
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+#  - Command: x2Many commands namespace
+# To return an action, assign: action = {...}
+
+records.message_post(body="Neuer Standort: " + records.x_studio_standort.name)
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="studio_customization.assets_97938dc1-cbf4-4811-b4ad-69810ea5f0ae"/>
+    <field name="name">Standort Zuweisung aktualisieren</field>
+    <field name="sequence">5</field>
+    <field name="state">code</field>
+  </record>
+  <record id="studio_customization.ticket_aktualisierun_81ac327c-c9d4-4d35-ab8b-03331eb6b687" model="ir.actions.server" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[# Available variables:
+#  - env: Odoo Environment on which the action is triggered
+#  - model: Odoo Model of the record on which the action is triggered; is a void recordset
+#  - record: record on which the action is triggered; may be void
+#  - records: recordset of all records on which the action is triggered in multi-mode; may be void
+#  - time, datetime, dateutil, timezone: useful Python libraries
+#  - float_compare: Odoo function to compare floats based on specific precisions
+#  - log: log(message, level='info'): logging function to record debug information in ir.logging table
+#  - UserError: Warning Exception to use with raise
+#  - Command: x2Many commands namespace
+# To return an action, assign: action = {...}
+
+
+
+]]></field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="helpdesk.model_helpdesk_ticket"/>
+    <field name="name">Ticket Aktualisierung</field>
+    <field name="sequence">5</field>
+    <field name="state">mail_post</field>
+  </record>
+</odoo>

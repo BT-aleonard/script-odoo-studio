@@ -1,0 +1,56 @@
+The following relational data haven't been exported because they either refer
+to a model that Studio doesn't export, or have no XML id:
+
+Record: studio_customization.asset_management_ea4d5706-6771-4343-a99f-67dad5920779
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(71,) ('assets / Administrator')
+
+Record: studio_customization.asset_management_ass_5f844a36-13c6-4106-9cdf-4de8e99a72ea
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(71,) ('assets / Administrator')
+
+Record: studio_customization.asset_management_ass_b5434fa7-2078-4f53-aec4-7a67ac53df18
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(71,) ('assets / Administrator')
+
+Record: studio_customization.asset_management_ass_d14f7186-1ee2-4c0e-aac6-9678becec940
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(71,) ('assets / Administrator')
+
+Record: studio_customization.asset_management_kon_7f725437-38de-4bca-b640-06a44fdada63
+Model: ir.ui.menu
+Field: groups_id
+Type: many2many
+Value: res.groups(71,) ('assets / Administrator')
+
+Record: studio_customization.abteilung_atg_gl_kop_369eaae6-c8a9-48b8-8248-340333f6717b
+Model: ir.filters
+Field: action_id
+Type: many2one
+Value: ir.actions.actions(184,) ('Projects')
+
+Record: studio_customization.abteilung_atg_gl_kop_369eaae6-c8a9-48b8-8248-340333f6717b
+Model: ir.filters
+Field: user_id
+Type: many2one
+Value: res.users(12,) ('Serge Tanner')
+
+Record: studio_customization.abteilung_atg_it_kop_88edcb09-4652-430c-b3ff-9dde843281f8
+Model: ir.filters
+Field: action_id
+Type: many2one
+Value: ir.actions.actions(184,) ('Projects')
+
+Record: studio_customization.abteilung_atg_it_kop_88edcb09-4652-430c-b3ff-9dde843281f8
+Model: ir.filters
+Field: user_id
+Type: many2one
+Value: res.users(6,) ('Raffael Del Mese')

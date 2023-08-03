@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.asset_kategorie_cf895428-462d-4a04-be27-f56b7923f33c" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Asset-Kategorie</field>
+    <field name="res_model">x_asset_kategorie</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.assets_7f41fd52-5fba-4a2e-8c4a-dc486c685aa1" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Assets</field>
+    <field name="res_model">x_assets</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form,pivot,graph</field>
+  </record>
+  <record id="studio_customization.assets_tags_efe0a7b1-7d67-45f4-99d7-3bb821df57b8" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Stichworte</field>
+    <field name="res_model">x_assets_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.asset_unterkategorie_ffbb68a9-4352-4750-b6bf-84a53e1edc4d" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Kategorien</field>
+    <field name="res_model">x_asset_unterkategorie</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.aufgaben_0dccc0ba-61ad-47d6-98a2-cd094cc2b96a" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Aufgaben</field>
+    <field name="res_model">project.task</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">kanban,tree,form,calendar,gantt,map,pivot,graph,activity</field>
+  </record>
+  <record id="studio_customization.bestatigungen_mitarb_616b08e9-4b24-4022-9a94-471d641ee6f9" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Bestätigungen Mitarbeitende Tags</field>
+    <field name="res_model">x_bestatigungen_mitarb_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.bestatigungen_mitarb_73648943-f991-443e-a231-108b3cf24746" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Bestätigungen Mitarbeitende</field>
+    <field name="res_model">x_bestatigungen_mitarb</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.bestatigungen_mitarb_a021a19b-c80a-4be6-83a1-998edf9aebb3" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Bestätigungen</field>
+    <field name="res_model">x_bestatigungen_mitarb</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.bestatigungen_mitarb_a9e4d108-c764-4fbd-9b0b-d709c4dd3e16" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Bestä</field>
+    <field name="res_model">x_bestatigungen_mitarb</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.best_tag_7651e357-0049-4179-a37e-e8228d7adc1e" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">best tag</field>
+    <field name="res_model">x_bestatigungen_mitarb_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.betriebssysteme_f4147e83-dabe-4090-a290-7f36fea156ec" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Betriebssysteme</field>
+    <field name="res_model">x_betriebssysteme</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.contact_6ddedb30-8f04-4a16-8502-d33643bb6757" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">KOntakt</field>
+    <field name="res_model">res.partner</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">kanban,tree,form,map,activity</field>
+  </record>
+  <record id="studio_customization.einverstandnis_mitar_0974ee58-ec34-4e5a-97d3-dbe5b1de39cf" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Einverständnis Mitarbeitende Tags</field>
+    <field name="res_model">x_einverstandnis_mitar_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.einverstandnis_mitar_bb4a807e-5134-4e65-83b4-b9a340cfbee2" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Einverständnis Mitarbeitende</field>
+    <field name="res_model">x_einverstandnis_mitar</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.einverstandnisse_mit_6e72b69e-9b94-4394-95a8-2da629868482" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Einverständnisse Mitarbeitende</field>
+    <field name="res_model">x_einverstandnisse_mit</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.einverstandnisse_mit_c6115b1f-7773-44ee-8cf2-b3715b131f7d" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Einverständnisse Mitarbeitende Tags</field>
+    <field name="res_model">x_einverstandnisse_mit_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.grund_fur_den_austri_c3a5306f-eced-451b-a17c-449130d4034c" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Grund für den Austritt</field>
+    <field name="res_model">hr.departure.reason</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.it_produktfamilie_6c253027-ee69-4de7-b322-20d8c801eab2" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">IT-Produktfamilie</field>
+    <field name="res_model">x_it_produktfamilie</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.it_produktfamilie_ta_3ac42610-2b9a-4ae9-81c1-4941920fa0a4" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">IT-Produktfamilie Tags</field>
+    <field name="res_model">x_it_produktfamilie_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.kontakt_81ed3ea7-bada-487b-86a4-3fd5eafdbf7c" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Kontakt</field>
+    <field name="res_model">res.partner</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">kanban,tree,form,map,activity</field>
+  </record>
+  <record id="studio_customization.kostenstellen_0105be57-a79f-40ec-9ab5-13488097b016" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Kostenstellen</field>
+    <field name="res_model">account.analytic.account</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  <record id="studio_customization.mail_aufgabe_empfang_cfde8890-cac1-46e5-8b4b-d10ec5206a21" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" ref="project.model_project_task"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{'default_composition_mode': 'mass_mail', 'default_template_id' : 7, 'default_use_template': True}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help" eval="False"/>
+    <field name="limit">80</field>
+    <field name="name">Mail (Aufgabe: Empfangsbestätigung) versenden</field>
+    <field name="res_model">mail.compose.message</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">new</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" ref="mail.email_compose_message_wizard_form"/>
+    <field name="view_mode">form,tree</field>
+  </record>
+  <record id="studio_customization.mitarbeitende_einver_57ea9b9b-2181-4e49-92f9-0434353b24e3" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Mitarbeitende Einverständnisse Tags</field>
+    <field name="res_model">x_mitarbeitende_einver_tag</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.mitarbeitende_einver_b23cb5b8-dc64-4327-8122-13652e014d16" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Mitarbeitende Einverständnisse</field>
+    <field name="res_model">x_mitarbeitende_einver</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.produktfamilie_it_su_ce3bb7db-69b4-4daf-9661-dd158c1e154b" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Produktfamilie IT-Support</field>
+    <field name="res_model">x_produktfamilie_it_su</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.produktfamilie_kateg_cbdf8b14-8894-4306-972d-115bf59cc9db" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Produktfamilie Kategorie IT-Support</field>
+    <field name="res_model">x_produktfamilie_kateg</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.produktfamilie_kateg_cebbea03-4b95-4eb7-bc67-5c0496ffc496" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Produktfamilie Kategrie</field>
+    <field name="res_model">x_produktfamilie_kateg</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.raume_4feceb9f-1ba4-4b67-8d84-df4c8ed488c0" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Räume</field>
+    <field name="res_model">x_raume</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.raume_6a04a514-0c5d-4d9c-acaf-ddb12938b539" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Räume</field>
+    <field name="res_model">x_raume</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.unter_f3ec9a98-b37e-4fd6-b6e1-95cf209d8381" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Kategorien</field>
+    <field name="res_model">x_asset_kategorie</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.vm_hostserver_0c2439a8-fdd6-47d2-b120-4160f74795ce" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">VM-Hostserver</field>
+    <field name="res_model">x_vm_hostserver</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="studio_customization.weisungen_und_reglem_f591ca55-185c-4767-8f0a-649c4646bf18" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{}</field>
+    <field name="domain" eval="False"/>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                    Dies ist Ihre neue Aktion.
+                </p>
+                <p>Standardmäßig enthält sie eine Listen- und eine Formularansicht und möglicherweise
+                    andere Ansichtstypen, je nachdem, welche Optionen Sie für Ihr Modell gewählt haben.
+                </p>
+                <p>
+                    Sie können mit der Anpassung dieser Bildschirme beginnen, indem Sie auf das Studio-Symbol
+                    oben rechts klicken (können Sie auch diese Hilfemeldung dort anpassen).
+                </p>
+            ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Weisungen und Reglemente</field>
+    <field name="res_model">x_weisungen_und_reglem</field>
+    <field name="search_view_id" eval="False"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">tree,form</field>
+  </record>
+  <record id="website_slides_survey.survey_survey_action_slides" model="ir.actions.act_window" context="{'studio': True}">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="context">{'default_certification': True, 'default_scoring_type': 'scoring_with_answers'}</field>
+    <field name="domain">[('certification', '=', True)]</field>
+    <field name="filter" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="help"><![CDATA[<p class="o_view_nocontent_smiling_face">
+                Create a Certification
+            </p>
+            <p>
+                Assess the level of understanding of your attendees
+                <br>and send them a document if they pass the test.
+            </p>
+        ]]></field>
+    <field name="limit">80</field>
+    <field name="name">Certifications</field>
+    <field name="res_model">survey.survey</field>
+    <field name="search_view_id" ref="website_slides_survey.survey_survey_view_search_slides"/>
+    <field name="target">current</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="usage" eval="False"/>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">kanban,tree,pivot,graph,form</field>
+  </record>
+</odoo>

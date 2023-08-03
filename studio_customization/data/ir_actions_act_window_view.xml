@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization._956d8dbf-84eb-414f-80ca-5f5e661654b2" model="ir.actions.act_window.view" context="{'studio': True}">
+    <field name="act_window_id" ref="website_slides_survey.survey_survey_action_slides"/>
+    <field name="multi" eval="False"/>
+    <field name="sequence">3</field>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">graph</field>
+  </record>
+  <record id="studio_customization._fa780e9f-fa60-45bd-b2b4-a535cd2a48ae" model="ir.actions.act_window.view" context="{'studio': True}">
+    <field name="act_window_id" ref="website_slides_survey.survey_survey_action_slides"/>
+    <field name="multi" eval="False"/>
+    <field name="sequence">2</field>
+    <field name="view_id" eval="False"/>
+    <field name="view_mode">pivot</field>
+  </record>
+  <record id="website_slides_survey.survey_survey_action_slides_view_form" model="ir.actions.act_window.view" context="{'studio': True}">
+    <field name="act_window_id" ref="website_slides_survey.survey_survey_action_slides"/>
+    <field name="multi" eval="False"/>
+    <field name="sequence">4</field>
+    <field name="view_id" ref="survey.survey_survey_view_form"/>
+    <field name="view_mode">form</field>
+  </record>
+  <record id="website_slides_survey.survey_survey_action_slides_view_kanban" model="ir.actions.act_window.view" context="{'studio': True}">
+    <field name="act_window_id" ref="website_slides_survey.survey_survey_action_slides"/>
+    <field name="multi" eval="False"/>
+    <field name="sequence" eval="False"/>
+    <field name="view_id" ref="survey.survey_survey_view_kanban"/>
+    <field name="view_mode">kanban</field>
+  </record>
+  <record id="website_slides_survey.survey_survey_action_slides_view_tree" model="ir.actions.act_window.view" context="{'studio': True}">
+    <field name="act_window_id" ref="website_slides_survey.survey_survey_action_slides"/>
+    <field name="multi" eval="False"/>
+    <field name="sequence">1</field>
+    <field name="view_id" ref="website_slides_survey.survey_survey_view_tree_slides"/>
+    <field name="view_mode">tree</field>
+  </record>
+</odoo>

@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.aktiv_asset_kategori_de2d43b2-cfcd-4f85-8447-a214fc136a71" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_asset_kategori_0bcaec82-97c7-4831-bcc8-9eff6feb8991"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_assets_3f9d3f36-89ab-4713-8f86-e59589ccf04f" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_assets_3f907938-dbe4-4940-b266-b964ee7c06f1"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_asset_unterkat_5e63603d-0a29-496f-9fbf-db79c71b4ac0" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_asset_unterkat_80224650-49be-450f-ad1f-35f6e998a79f"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_betriebssystem_6f306a27-fc29-42e5-8351-3a8b2685a6f4" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_betriebssystem_8b386d64-0fa1-4375-b58a-b6f272df1b12"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_produktfamilie_5633943d-ba3c-4d75-8934-906df013c798" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_produktfamilie_6a430876-9633-47d8-99ce-5a2f271ab093"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_produktfamilie_b009e4e4-d018-4a84-aff2-813e65006145" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_produktfamilie_f9c3d6da-d1c8-4fe8-bf8e-5040527ee44a"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_raume_e92f3cde-431d-41af-9b45-b355eba10c96" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_raume_9610815b-54b1-446e-9bfd-4f19b81fe723"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.aktiv_vm_hostserver_3a25a7c5-660a-4ebd-acdb-84441c070146" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.aktiv_vm_hostserver_8bff7a58-4272-44df-a45a-d0eaf6cb8681"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">true</field>
+  </record>
+  <record id="studio_customization.new_ganzzahl_employe_75adde23-a8ae-49c1-b26c-61decb78acb9" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.new_ganzzahl_employe_7db499f7-e5bd-4aa8-ba03-5decaa8fe6ab"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">""</field>
+  </record>
+  <record id="studio_customization.prioritat_projekt_c45c6450-973f-462f-83ca-225f268dcdb3" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.new_prioritat_projec_00ab8011-904f-4232-9437-eb0c3e43945b"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">"0"</field>
+  </record>
+  <record id="studio_customization.reihenfolge_asset_ka_15e56e21-d916-4c55-8b24-1875444dc7c0" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_asset_ka_127be365-0728-4819-9e9c-0f9fc0aa365c"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_assets_b0f306ec-be79-491d-9a6c-ec4a4ef2f93b" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_assets_617a7d0b-48f6-4e23-b246-9f05c0407492"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_asset_un_9f46339b-3704-438f-9651-4b130a5b193f" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_asset_un_9fc4f7fe-9836-47a2-b5d1-321b05682329"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_bestatig_f877e4aa-fc1b-4a48-84fa-bb206b898145" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_bestatig_04f1ff22-83d1-4ce4-8298-f469c21e8044"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_betriebs_e4a3820e-b121-4983-b6e8-1ccacdd698d4" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_betriebs_54c9ac94-9a1d-4852-9717-d0c6d43be6d2"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_produktf_8c512830-4e6d-4802-9ed7-b95001e3b25a" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_produktf_4f6a75ed-0fc0-45dc-bfb6-a358cc5e033f"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_produktf_fda67cc6-4b41-49ed-82aa-3688e8b18360" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_produktf_7854ce40-2bc6-4189-8f61-03a14450213e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_raume_89356acb-3892-468e-b8ee-f9901cd4c545" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_raume_606c8070-8559-4e2b-ab96-692caa9c61ad"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.reihenfolge_vm_hosts_77f2d882-e2f9-4c74-aab4-47c30e8a2d56" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.reihenfolge_vm_hosts_75b5d6c2-59cb-405a-883d-bd27d53a0884"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_0041d5b1-60d1-4205-99a6-b23caac39b1b" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">4</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_41694096-b63b-4d51-ae8a-e78eecabd111" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">10</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_5f2e20de-0145-46a0-9cd8-6fccbbd1e6b9" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">9</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_6c80a7b7-d8d6-4f6d-93ce-662f63378627" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">2</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_78334562-1cd7-4f8b-a039-51eb51d7236b" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">11</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_8819bd54-09a7-4bb1-b23b-9c72ecf0188d" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">5</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_bc8d38a3-3ba1-4bc0-a5ac-d4d2fb2aaac1" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">6</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_c656e2e6-47c8-4ae9-bb97-4ae318527db6" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">3</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_cbc8b79d-04d8-462b-99b9-b234f76ff335" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">8</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_e156d373-2040-4960-80a9-bf405db44662" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">7</field>
+  </record>
+  <record id="studio_customization.unternehmen_assets_f0c0a555-d1c9-41f1-8405-0c7eec1846b5" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.unternehmen_assets_fb63237c-ba4b-4356-b922-b119fcbc2f5e"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_09be3bde-7a5b-466b-8eba-6d090d2314d7" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">5</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_1720ec58-dbfe-459b-b5ad-4d873cd7c168" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">5</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_23718d08-1fcf-4ac8-997d-84cfbd82040e" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_35602e1a-7fd4-44d9-bbdb-61671295149f" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">142</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_5e284fe7-7e38-4423-af0f-7bf3bdee8322" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_76c081f3-8c0f-420d-aaa9-9960b7e8d0ac" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_877f9d3d-17ea-4245-8b08-71e418d4ced0" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">1</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_a0cad076-1303-43be-a8e1-b9603af1e7a6" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">17</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_c34a4484-79e0-49d9-8734-5c6cd66325bf" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">4</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_e0c9e5dc-dfcb-4151-a794-a51a8460a7ae" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">5</field>
+  </record>
+  <record id="studio_customization.wahrung_assets_e3d0b662-cb11-416f-9027-c1554207bc7b" model="ir.default" context="{'studio': True}">
+    <field name="field_id" ref="studio_customization.wahrung_assets_3011e0b1-b1d7-40e8-8c70-59f850c07d63"/>
+    <field name="condition" eval="False"/>
+    <field name="json_value">5</field>
+  </record>
+</odoo>

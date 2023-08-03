@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="hr.hr_menu_configuration" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.hr_config_settings_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    <field name="name">Settings</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_config_plan" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+    <field name="name">Activity Planning</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_config_plan_plan" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.hr_plan_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_manager')])]"/>
+    <field name="name">Plans</field>
+    <field name="parent_id" ref="hr.menu_config_plan"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_hr_department_tree" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.hr_department_tree_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+    <field name="name">Departments</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_hr_departure_reason_tree" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.hr_departure_reason_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+    <field name="name">Departure Reasons</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">9</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_hr_work_location_tree" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.hr_work_location_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+    <field name="name">Work Locations</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">8</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_view_employee_category_form" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.open_view_categ_form"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    <field name="name">Tags</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr.menu_view_hr_job" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr.action_hr_job"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Job Positions</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr_gamification.menu_hr_gamification" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Challenges</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">11</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr_skills.hr_skill_type_menu" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="hr_skills.hr_skill_type_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('hr.group_hr_user')])]"/>
+    <field name="name">Skill Types</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="hr_skills.menu_human_resources_configuration_resume" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_no_one')])]"/>
+    <field name="name">Resumé</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">7</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="project.menu_project_config_project_stage" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="project.project_project_stage_configure"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('project.group_project_stages')])]"/>
+    <field name="name">Project Stages</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="project.menu_projects_config" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="project.open_view_project_all_config"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Projects</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="project.menu_project_tags_act" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="project.project_tags_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Tags</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="project.project_config_settings_menu_action" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="project.project_config_settings_action"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+    <field name="name">Settings</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="project.project_menu_config_activity_type" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="project.mail_activity_type_action_config_project_types"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Activity Types</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">4</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_ea4d5706-6771-4343-a99f-67dad5920779" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="name">Asset Management</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Konfiguration</field>
+    <field name="parent_id" ref="studio_customization.asset_management_ea4d5706-6771-4343-a99f-67dad5920779"/>
+    <field name="sequence">100</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_1d663d58-4e05-4cde-a432-9b717a73a06b" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="base.action_open_website"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">IT Infrastruktur</field>
+    <field name="parent_id" ref="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774"/>
+    <field name="sequence">3</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_69ee9818-515f-4161-82c2-4bee1f0e5658" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.raume_4feceb9f-1ba4-4b67-8d84-df4c8ed488c0"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Räume</field>
+    <field name="parent_id" ref="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_ass_5f844a36-13c6-4106-9cdf-4de8e99a72ea" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.asset_kategorie_cf895428-462d-4a04-be27-f56b7923f33c"/>
+    <field name="active" eval="False"/>
+    <field name="name">Asset-Kategorie</field>
+    <field name="parent_id" ref="studio_customization.asset_management_ea4d5706-6771-4343-a99f-67dad5920779"/>
+    <field name="sequence">102</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_ass_b5434fa7-2078-4f53-aec4-7a67ac53df18" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.assets_7f41fd52-5fba-4a2e-8c4a-dc486c685aa1"/>
+    <field name="active" eval="True"/>
+    <field name="name">Assets</field>
+    <field name="parent_id" ref="studio_customization.asset_management_ea4d5706-6771-4343-a99f-67dad5920779"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_ass_d14f7186-1ee2-4c0e-aac6-9678becec940" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.asset_unterkategorie_ffbb68a9-4352-4750-b6bf-84a53e1edc4d"/>
+    <field name="active" eval="False"/>
+    <field name="name">Kategorien</field>
+    <field name="parent_id" ref="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_bet_fd3c196c-31c8-488f-9702-eb7288e910b5" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.betriebssysteme_f4147e83-dabe-4090-a290-7f36fea156ec"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Betriebssysteme</field>
+    <field name="parent_id" ref="studio_customization.asset_management_1d663d58-4e05-4cde-a432-9b717a73a06b"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_kon_7f725437-38de-4bca-b640-06a44fdada63" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.assets_tags_efe0a7b1-7d67-45f4-99d7-3bb821df57b8"/>
+    <field name="active" eval="True"/>
+    <field name="name">Stichworte</field>
+    <field name="parent_id" ref="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774"/>
+    <field name="sequence">2</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_unt_ddf3295d-e6f4-4062-9878-ede3278c2566" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.unter_f3ec9a98-b37e-4fd6-b6e1-95cf209d8381"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kategorien</field>
+    <field name="parent_id" ref="studio_customization.asset_management_kon_d44b72a7-ccfc-4398-86f6-09db1df0a774"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.asset_management_vm__a1bf18ac-038e-4163-b273-0aa6a4d1e3fb" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.vm_hostserver_0c2439a8-fdd6-47d2-b120-4160f74795ce"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">VM-Hostserver</field>
+    <field name="parent_id" ref="studio_customization.asset_management_1d663d58-4e05-4cde-a432-9b717a73a06b"/>
+    <field name="sequence">1</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.aufgaben_b10c9228-3ad7-4e4b-b5c5-6d2f7383ff78" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Aufgaben</field>
+    <field name="parent_id" eval="False"/>
+    <field name="sequence">10</field>
+    <field name="web_icon">fa fa-star,#FFFFFF,#34495e</field>
+  </record>
+  <record id="studio_customization.aufgaben_aufgaben_450c8718-53d3-40c3-9361-ab61591957e7" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.aufgaben_0dccc0ba-61ad-47d6-98a2-cd094cc2b96a"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Aufgaben</field>
+    <field name="parent_id" ref="studio_customization.aufgaben_b10c9228-3ad7-4e4b-b5c5-6d2f7383ff78"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.einstellungen_4d2256bb-88b6-4c19-890a-50a1e26bcb0b" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.contact_6ddedb30-8f04-4a16-8502-d33643bb6757"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">KOntakt</field>
+    <field name="parent_id" ref="base.menu_administration"/>
+    <field name="sequence">111</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_benutze_8c15c6af-d81c-4200-9f83-acbbbdd02e29" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="helpdesk.menu_helpdesk_root"/>
+    <field name="sequence">1000</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_benutze_8596be16-954e-41b0-bdda-41f8e16be551" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.it_produktfamilie_ta_3ac42610-2b9a-4ae9-81c1-4941920fa0a4"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">IT-Produktfamilie Tags</field>
+    <field name="parent_id" ref="studio_customization.kundendienst_benutze_8c15c6af-d81c-4200-9f83-acbbbdd02e29"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_it_prod_71b4a38c-547a-4e55-8e99-d82449d9bab1" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.it_produktfamilie_6c253027-ee69-4de7-b322-20d8c801eab2"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">IT-Produktfamilie</field>
+    <field name="parent_id" ref="helpdesk.menu_helpdesk_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_produkt_266e63e3-a431-4791-8711-ca224002bd27" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.produktfamilie_it_su_ce3bb7db-69b4-4daf-9661-dd158c1e154b"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Produktfamilie IT-Support</field>
+    <field name="parent_id" ref="helpdesk.menu_helpdesk_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_produkt_99eb0843-2855-43bc-aeaa-de91f550490c" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.produktfamilie_kateg_cbdf8b14-8894-4306-972d-115bf59cc9db"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Produktfamilie Kategorie IT-Support</field>
+    <field name="parent_id" ref="helpdesk.menu_helpdesk_root"/>
+    <field name="sequence">102</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.kundendienst_produkt_f419062e-4dd2-4906-a054-8f141aefe7ec" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.produktfamilie_kateg_cebbea03-4b95-4eb7-bc67-5c0496ffc496"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Produktfamilie Kategrie</field>
+    <field name="parent_id" ref="helpdesk.menu_helpdesk_root"/>
+    <field name="sequence">102</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_7fee49e4-8706-4d22-97ae-9f8bfa68de43" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.bestatigungen_mitarb_a021a19b-c80a-4be6-83a1-998edf9aebb3"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bestätigungen</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">6</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_062759af-d468-4a88-a383-9ba4a929afdb" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">1000</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_d442db2f-4ef8-42f2-b618-1655f4727c59" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_31e1e536-2d4c-4e68-993b-83f58916e934" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Weisungen und Reglemente Tags</field>
+    <field name="parent_id" ref="studio_customization.personal_benutzerdef_d442db2f-4ef8-42f2-b618-1655f4727c59"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_3309373b-3f86-48e5-a64f-2babcbb484ea" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.mitarbeitende_einver_57ea9b9b-2181-4e49-92f9-0434353b24e3"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Mitarbeitende Einverständnisse Tags</field>
+    <field name="parent_id" ref="studio_customization.personal_benutzerdef_062759af-d468-4a88-a383-9ba4a929afdb"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_49192c13-9ed9-4c43-8e70-a064ff649c8a" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">1000</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_5cd3348d-117e-446b-92dd-8ee957919086" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">1000</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_71431605-fd56-4f15-9976-3288e3d08445" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.bestatigungen_mitarb_616b08e9-4b24-4022-9a94-471d641ee6f9"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bestätigungen Mitarbeitende Tags</field>
+    <field name="parent_id" ref="studio_customization.personal_benutzerdef_49192c13-9ed9-4c43-8e70-a064ff649c8a"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_a1c20eac-7d5b-4054-8742-a8c86c8c55c1" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.einverstandnisse_mit_c6115b1f-7773-44ee-8cf2-b3715b131f7d"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Einverständnisse Mitarbeitende Tags</field>
+    <field name="parent_id" ref="studio_customization.personal_benutzerdef_5cd3348d-117e-446b-92dd-8ee957919086"/>
+    <field name="sequence">10</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_f03b86ae-59be-49f2-9ced-bd1c755ef45e" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" eval="False"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Benutzerdefinierte Konfiguration</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">1000</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_einverstand_d8815598-93af-4f2d-a892-014350d36297" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.einverstandnis_mitar_bb4a807e-5134-4e65-83b4-b9a340cfbee2"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Einverständnis Mitarbeitende</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">9</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_benutzerdef_f4cb1ef6-8d90-4c9c-93ae-d8e9eaf61d01" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.einverstandnis_mitar_0974ee58-ec34-4e5a-97d3-dbe5b1de39cf"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Einverständnis Mitarbeitende Tags</field>
+    <field name="parent_id" ref="studio_customization.personal_einverstand_d8815598-93af-4f2d-a892-014350d36297"/>
+    <field name="sequence" eval="False"/>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_bestatigung_fbe73aa2-f17d-4ee0-a7f1-59c4236bba97" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.bestatigungen_mitarb_73648943-f991-443e-a231-108b3cf24746"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bestätigungen Mitarbeitende</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_best_tag_3ac4681c-5d9f-4c0b-a50f-b56943261171" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.best_tag_7651e357-0049-4179-a37e-e8228d7adc1e"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">best tag</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">102</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_e625ad1c-b53a-4ed1-b883-54434ce727ec" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.bestatigungen_mitarb_a9e4d108-c764-4fbd-9b0b-d709c4dd3e16"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Bestä</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_einverstand_0312655e-3984-447c-bfac-6d305a9fe161" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.einverstandnisse_mit_6e72b69e-9b94-4394-95a8-2da629868482"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Einverständnisse Mitarbeitende</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_grund_fur_d_40435e1b-64da-4dec-b2d7-e7914d2e7439" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.grund_fur_den_austri_c3a5306f-eced-451b-a17c-449130d4034c"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Grund für den Austritt</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">12</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_mitarbeiten_9b81817c-8508-4681-863b-f16ef48cf2e1" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.mitarbeitende_einver_b23cb5b8-dc64-4327-8122-13652e014d16"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Mitarbeitende Einverständnisse</field>
+    <field name="parent_id" ref="hr.menu_hr_root"/>
+    <field name="sequence">101</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_raume_22fc81ee-deb3-4bf7-8209-44094acd0e46" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.raume_6a04a514-0c5d-4d9c-acaf-ddb12938b539"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Räume</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.personal_weisungen_u_8b350704-4aba-4d8e-a02a-ccc7c1ac4a69" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.weisungen_und_reglem_f591ca55-185c-4767-8f0a-649c4646bf18"/>
+    <field name="active" eval="False"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Weisungen und Reglemente</field>
+    <field name="parent_id" ref="hr.menu_human_resources_configuration"/>
+    <field name="sequence">9</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.projekt_kontakt_a1a04f67-2418-4679-a337-79c9539857e0" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.kontakt_81ed3ea7-bada-487b-86a4-3fd5eafdbf7c"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kontakt</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">5</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+  <record id="studio_customization.projekt_kostenstelle_cac2442f-debd-4178-9328-bab525c02069" model="ir.ui.menu" context="{'studio': True}">
+    <field name="action" ref="studio_customization.kostenstellen_0105be57-a79f-40ec-9ab5-13488097b016"/>
+    <field name="active" eval="True"/>
+    <field name="groups_id" eval="[(6, 0, [])]"/>
+    <field name="name">Kostenstellen</field>
+    <field name="parent_id" ref="project.menu_project_config"/>
+    <field name="sequence">6</field>
+    <field name="web_icon" eval="False"/>
+  </record>
+</odoo>

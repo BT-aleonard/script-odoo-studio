@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="studio_customization.assets_multi_company_def2bdf9-26cf-4289-92fc-9ade5460511d" model="ir.rule" context="{'studio': True}">
+    <field name="active" eval="True"/>
+    <field name="domain_force"><![CDATA[['|', ('x_studio_company_id', '=', False), ('x_studio_company_id', 'in', company_ids)]]]></field>
+    <field name="groups" eval="[(6, 0, [])]"/>
+    <field name="model_id" ref="studio_customization.assets_97938dc1-cbf4-4811-b4ad-69810ea5f0ae"/>
+    <field name="name">Assets - Multi-Company</field>
+    <field name="perm_create" eval="True"/>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_unlink" eval="True"/>
+    <field name="perm_write" eval="True"/>
+  </record>
+</odoo>
